@@ -70,6 +70,27 @@ header .nav-header {
   font-weight: 100;
   font-size: 2.5em;
   margin: 0px, 20px; }
+.body-left .rate-container table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%; }
+  .body-left .rate-container table td,
+  .body-left .rate-container table th {
+    text-align: left;
+    padding: 8px; }
+  .body-left .rate-container table tr {
+    background-color: #eef5f0; }
+  .body-left .rate-container table tr:nth-child(even) {
+    background-color: #ddebe1; }
+  .body-left .rate-container table tr:first-child {
+    background-color: white;
+    font-weight: lighter;
+    font-size: 0.7em; }
+  .body-left .rate-container table tr:nth-child(2) {
+    font-weight: 900; }
+.body-left .rate-container .table-footer {
+  float: right;
+  margin: 0; }
 
 body {
   margin: auto;
