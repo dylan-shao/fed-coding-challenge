@@ -27,16 +27,17 @@ header .nav-header {
           display: flex;
           margin-top: 10px;
           margin-right: 20px; } }
-    header .nav-header ul .btn:hover .menu {
-      display: block; }
-      header .nav-header ul .btn:hover .menu li {
-        display: flex;
-        flex-direction: column;
-        width: 50%; }
-        header .nav-header ul .btn:hover .menu li a {
-          width: 60%;
-          padding: 0px 20px 10px 20px;
-          margin-right: 10px; }
+    @media screen and (max-width: 670px) {
+      header .nav-header ul .btn:hover .menu {
+        display: block; }
+        header .nav-header ul .btn:hover .menu li {
+          display: flex;
+          flex-direction: column;
+          width: 50%; }
+          header .nav-header ul .btn:hover .menu li a {
+            width: 60%;
+            padding: 0px 20px 10px 20px;
+            margin-right: 10px; } }
     @media screen and (max-width: 670px) {
       header .nav-header ul .menu {
         display: none; } }
