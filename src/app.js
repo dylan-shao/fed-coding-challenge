@@ -34,11 +34,13 @@ function creataTableFromData(data) {
     tr.append('<th>Annual Percentage Yield</th>');
     tr.append('<th>Est. Earnings for 1 Year*</th>');
     table.append(tr);
-    data.forEach(function(item) {
+    data.sort(function(a,b){
+      return b.earnings - a.earnings;
+    }).forEach(function(item) {
         var tr = $('<tr></tr>');
         tr.append('<td>' + item.name + '</td>');
-        tr.append('<td>' + item.apy + '</td>');
-        tr.append('<td>' + item.earnings + '</td>');
+        tr.append('<td>' + item.apy + '%' + '</td>');
+        tr.append('<td>' + '$' + item.earnings.toFixed(2) + '</td>');
         table.append(tr);
     });
 
