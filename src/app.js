@@ -57,17 +57,32 @@ $(document).ready(function() {
   }
 
 
-  $(".btn-close").click(function(e) {
+  $('.btn-close').click(function(e) {
     e.preventDefault();
-    $("#body").toggleClass("dialogIsOpen");
-    $("#modal").fadeOut('fast');
+    $('#body').toggleClass('dialogIsOpen');
+    $('#modal').fadeOut('fast');
   });
 
 
-  $("#login").click(function(e) {
+  $('#login').click(function(e) {
     e.preventDefault();
-    $("#body").toggleClass("dialogIsOpen");
-    $("#modal").fadeIn('fast');
+    $('#body').toggleClass('dialogIsOpen');
+    $('#modal').fadeIn('fast');
+  });
+
+  $('#archiveBtb').click(function(e){
+    e.preventDefault();
+    $('.tab-news').removeClass('active'); 
+    $('.news').hide(); 
+    $('.tab-archive').addClass('active');
+    $('.archive').show();
+  });
+  $('#newsBtn').click(function(e){
+    e.preventDefault();
+    $('.tab-news').addClass('active'); 
+    $('.news').show(); 
+    $('.tab-archive').removeClass('active');
+    $('.archive').hide();
   });
 
 });

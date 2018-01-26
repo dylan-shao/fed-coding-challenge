@@ -98,12 +98,87 @@ header .nav-header {
   font-weight: 100;
   font-size: 2.5em;
   color: #640B5F;
-  margin: 0px 50px; }
+  margin: 0px 30px; }
   .body-right .login .login-btn {
     background-color: #640b5f;
     color: white;
-    width: 200px;
+    width: 90%;
     height: 40px; }
+.body-right .content {
+  margin: 30px;
+  width: 80%; }
+  .body-right .content .headers {
+    display: flex; }
+    .body-right .content .headers h3 {
+      flex-direction: row;
+      text-align: center;
+      padding: 0px;
+      margin-bottom: 0px;
+      color: #4798C3; }
+      .body-right .content .headers h3 button {
+        width: 100%;
+        height: 100%;
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: inherit;
+        font-size: 1em; }
+      .body-right .content .headers h3 button:focus {
+        outline: 0; }
+    .body-right .content .headers .tab-news {
+      background-color: #DDEBE1;
+      width: 35%;
+      border: 1px solid gray;
+      border-left: none; }
+    .body-right .content .headers .tab-archive {
+      background-color: #DDEBE1;
+      width: 40%;
+      border: 1px solid gray;
+      border-left: none; }
+    .body-right .content .headers .active {
+      background-color: #F5F5F5;
+      border-bottom: none;
+      margin-top: 5px;
+      padding-top: 19px;
+      color: #646464; }
+    .body-right .content .headers .active.tab-news {
+      border-right: solid;
+      border-width: 1px;
+      border-color: gray; }
+    .body-right .content .headers .active.tab-archive {
+      border-left: solid;
+      border-width: 1px;
+      border-color: gray; }
+  .body-right .content .news,
+  .body-right .content .archive {
+    background-color: #F5F5F5;
+    padding: 15px; }
+    .body-right .content .news ul,
+    .body-right .content .archive ul {
+      padding: 0px;
+      margin: 0px; }
+      .body-right .content .news ul li,
+      .body-right .content .archive ul li {
+        margin-top: 20px;
+        list-style: none; }
+        .body-right .content .news ul li h3,
+        .body-right .content .archive ul li h3 {
+          font-weight: bold;
+          margin: 0px;
+          color: #4798C3; }
+        .body-right .content .news ul li p,
+        .body-right .content .archive ul li p {
+          margin: 0px; }
+  .body-right .content .archive ul li {
+    margin-top: 10px; }
+    .body-right .content .archive ul li a {
+      margin: 0px;
+      text-decoration: none;
+      color: #4798C3;
+      font-size: 1.2rem;
+      font-weight: bold; }
+  .body-right .content .hide {
+    display: none; }
 
 #modal {
   background: white;
@@ -174,8 +249,7 @@ div {
   flex-wrap: nowrap; }
 
 main {
-  margin-left: 70px;
-  margin-top: 40px; }
+  margin: 40px 70px; }
   main .body-left {
     width: 60%; }
   main .body-right {
