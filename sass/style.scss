@@ -1,6 +1,8 @@
 @import 'header';
 @import 'body';
 @import 'modal';
+@import "variables";
+
 
 body {
   margin: auto;
@@ -19,7 +21,7 @@ div {
 
   /* Blur and de-color */
   -webkit-filter: blur(5px) grayscale(50%);
-  filter: grayscale(50%);
+  filter: blur(5px) grayscale(50%);
 
   /* Recede */
   -webkit-transform: scale(0.9);
@@ -29,6 +31,9 @@ div {
 .container {
   display: flex;
   flex-wrap: nowrap;
+  @media screen and (max-width: $break-sm) {
+    display:block;
+  }
 }
 
 main {
@@ -36,9 +41,23 @@ main {
 
   .body-left {
     width: 60%;
+    @media screen and (min-width: $break-xl-min) {
+      margin-left:100px;
+    }
+
+    @media screen and (max-width: $break-sm) {
+      width: 100%;
+    }
   }
 
   .body-right {
     width: 40%;
+    @media screen and (min-width: $break-xl-min) {
+      margin-right:100px;
+    }
+
+    @media screen and (max-width: $break-sm) {
+      width: 100%;
+    }
   }
 }
