@@ -90,7 +90,65 @@ header .nav-header {
     font-weight: 900; }
 .body-left .rate-container .table-footer {
   float: right;
-  margin: 0; }
+  margin: 0;
+  font-weight: lighter;
+  font-size: 0.7em; }
+
+.body-right .login {
+  font-weight: 100;
+  font-size: 2.5em;
+  color: #640B5F;
+  margin: 0px 50px; }
+  .body-right .login .login-btn {
+    background-color: #640b5f;
+    color: white;
+    width: 200px;
+    height: 40px; }
+
+#modal {
+  background: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 180px;
+  margin: -25% 0 0 -25%;
+  border: thin solid #cecece;
+  box-shadow: 3px 0px 7px 1px #d4e0e8;
+  border-radius: 3px;
+  opacity: 1; }
+  #modal #close-button {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    color: #cecece;
+    font-size: 18px;
+    text-decoration: none; }
+  #modal #close-button:hover {
+    color: #e55753;
+    text-decoration: none; }
+  #modal h2 {
+    margin: 20px 20px;
+    font-weight: 100; }
+  #modal form {
+    width: 100%;
+    margin: 0 0 20px 20px; }
+    #modal form .container {
+      flex-direction: column;
+      justify-content: flex-start; }
+      #modal form .container .username {
+        margin-bottom: 10px; }
+      #modal form .container .label {
+        display: inline-block;
+        margin-right: 10px;
+        width: 20%; }
+      #modal form .container input[type=text], #modal form .container input[type=password] {
+        width: 50%; }
+      #modal form .container #login {
+        float: right;
+        margin-right: 30%;
+        background-color: #640B5F;
+        color: white; }
 
 body {
   margin: auto;
@@ -102,6 +160,14 @@ header,
 section,
 div {
   box-sizing: border-box; }
+
+.dialogIsOpen {
+  /* Blur and de-color */
+  -webkit-filter: blur(5px) grayscale(50%);
+  filter: grayscale(50%);
+  /* Recede */
+  -webkit-transform: scale(0.9);
+  pointer-events: none; }
 
 .container {
   display: flex;

@@ -31,7 +31,7 @@
     </div>
   </header>
   <main>
-    <section class="content container">
+    <section id="body" class="content container">
       <div class="body-left">
         <section class="header-container">
           <h1>Best Bank Ever!</h1>
@@ -67,9 +67,33 @@
         </section>
       </div>
       <div class="body-right">
+        <div class="login">
+          <button id="login" class="btn login-btn">Login</button>
+        </div>
+        
       </div>
     </section>
   </main>
+  <div id="modal" style="display:none">
+    <a href="#" id="close-button" class="btn btn-close">x</a>
+    <h2>Sign in to your account</h1>
+    <form method="get">
+      <div class="container">
+        <div class="username">
+          <label class="label">Username</label>
+          <input type="text" placeholder="Username" autofocus>
+        </div>
+        <div>
+          <label class="label">Password</label>
+          <input type="password" placeholder="Password">
+        </div>
+        <div>
+          <input type="submit" id="login" class="btn btn-close" value="Log In">
+        </div>
+      </div>
+
+    </form>
+  </div>
   <footer>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">

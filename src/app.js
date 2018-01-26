@@ -56,4 +56,18 @@ $(document).ready(function() {
     creataTableFromData(data);
   }
 
+
+  $(".btn-close").click(function(e) {
+    e.preventDefault();
+    $("#body").toggleClass("dialogIsOpen");
+    $("#modal").fadeOut('fast');
+  });
+
+
+  $("#login").click(function(e) {
+    e.preventDefault();
+    $("#body").toggleClass("dialogIsOpen");
+    $("#modal").fadeIn('fast');
+  });
+
 });

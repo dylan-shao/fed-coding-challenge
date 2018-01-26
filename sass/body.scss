@@ -1,3 +1,8 @@
+@mixin lighter-font($weight:lighter, $size:0.7em) {
+  font-weight: $weight;
+  font-size: $size;
+}
+
 .body-left {
   .header-container {
     h1 {
@@ -55,7 +60,9 @@
     }
 
     table {
-      font-family: arial, sans-serif;
+
+      font-family: arial,
+      sans-serif;
       border-collapse: collapse;
       width: 100%;
       td,
@@ -71,8 +78,7 @@
       }
       tr:first-child {
         background-color: white;
-        font-weight: lighter;
-        font-size: 0.7em;
+        @include lighter-font;
       }
       tr:nth-child(2) {
         font-weight: 900;
@@ -80,8 +86,24 @@
     }
 
     .table-footer {
-     float: right;
-     margin: 0;
+      float: right;
+      margin: 0;
+      @include lighter-font;
+    }
+  }
+}
+
+.body-right {
+  .login {
+    font-weight: 100;
+    font-size: 2.5em;
+    color: #640B5F;
+    margin: 0px 50px;
+    .login-btn {
+      background-color: #640b5f;
+      color: white;
+      width: 200px;
+      height: 40px;
     }
   }
 }
